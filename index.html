@@ -2,209 +2,290 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Dappy</title>
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-        <div class="header_navigation">
-            <div class="container">
-                <div class="logo">
-                    <a href="#"><img src="img/logo.png" alt="Dappy"></a>
-                </div>
-                <nav class="header_nav">
-                    <ul class="header_link">
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Support</a></li>
-                    </ul>
+    <div class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo__link" href="#">
+                    <img class="logo" src="assets/img/logo.svg" alt="Dappy">
+                </a>
+                <nav class="nav">
+                    <div class="nav__menu">
+                        <a class="nav__menu-link" href="#">How it works</a>
+                        <a class="nav__menu-link" href="#">Blog</a>
+                        <a class="nav__menu-link" href="#">Support</a>
+                    </div>
+                    <div class="nav__social">
+                        <a class="nav__social-link" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="nav__social-link" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#ph"></use>
+                            </svg>
+                        </a>
+                        <a class="nav__social-link" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#github"></use>
+                            </svg>
+                        </a>
+                        <a class="nav__social-link" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#reddit"></use>
+                            </svg>
+                        </a>
+                        <a class="nav__social-link" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#bitcointalk"></use>
+                            </svg>
+                        </a>
+                        <a class="nav__social-link" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#blockstack"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </nav>
-                <div class="header_icon">
-                    <ul>
-                        <li><a href="#"><img src="icon/twitter.svg" alt="Twittwr" target="_blank"></a></li>
-                        <li><a href="#"><img src="icon/social-ph2x.svg" alt="Social" target="_blank"></a></li>
-                        <li><a href="#"><img src="icon/github.svg" alt="GitHub" target="_blank"></a></li>
-                        <li><a href="#"><img src="icon/reddit.svg" alt="Reddit" target="_blank"></a></li>
-                        <li><a href="#"><img src="icon/bitcointalk.svg" alt="BitCoin" target="_blank"></a></li>
-                        <li><a href="#"><img src="icon/blockstack.svg" alt="Blockstack" target="_blank"></a></li>
-                    </ul>
-                </div>
             </div>
         </div>
-    </header>
-    <!-- INTRO -->
+    </div>
+    
     <div class="intro">
         <div class="container">
-            <div class="section_top">
-                <div class="create_wallet">
-                    <h1>Create your first decentralized wallet</h1>
-                    <p>The easiest way to manage <br> multiple cryptocurrency assets</p>
-                    <a href="#" class="btn">create wallet</a>
-                </div>
-                <div class="wallet_img">
-                    <img src="img/purse.png" alt="">
-                </div>
-            </div>
-            <div class="section_bottom">
-                <div class="left_column">
-                    <div class="inner">
-                        <p class="text">Dappy is light wallet powered by Blockstack. It uses Gaia decentralized storage and encryption option. Dappy doesn't store or proceed user private key, the all data are securely stored in the Gaia. Dappy was created by the BC Net that trust in crypto and decentralized applications.</p>
-                    </div>
-                    <div class="inner">
-                        <div class="wrapper">
-                            <h2>Free and open source</h2>
-                            <img src="img/free_and_open_source.png" alt="Free and open source">
-                            <p>Fully open and transparent wallet. Our code is open source and trusted by Blockstack Team.</p>
-                        </div>
-                    </div>
-                    <div class="inner">
-                        <div class="wrapper">
-                            <h2>Roadmap</h2>
-                        <div class="wrapper_inner_wrapper">
-                            <div class="inner_wrapper">
-                                <div class="roadmap_inner">
-                                    <div class="ellipse green"></div>
-                                    <p class="date">May 2018</p>
-                                    <p class="roadmap_text">Blockstack Autorisation</p>
-                                </div>
-                                <div class="roadmap_inner">
-                                    <div class="ellipse green"></div>
-                                    <p class="roadmap_text">Decentralized storage Gaia</p>
-                                </div>
-                                <div class="roadmap_inner">
-                                    <div class="ellipse green"></div>
-                                    <p class="roadmap_text">BTC, ETH, ETC, LTC, BCH, BTG, DOGE, DCR, DACH</p>
-                                </div>
-                            </div>
-                            <div class="inner_wrapper">
-                                <div class="roadmap_inner">
-                                    <div class="ellipse green"></div>
-                                    <p class="roadmap_text">Support ERC20 tokens</p>
-                                </div>
-                                <div class="roadmap_inner">
-                                    <div class="ellipse green"></div>
-                                    <p class="roadmap_text">Support Custom token</p>
-                                </div>
-                                <div class="roadmap_inner">
-                                    <div class="ellipse green"></div>
-                                    <p class="date">June 2018</p>
-                                    <p class="roadmap_text">Exchange powered by ShapeShift</p>
-                                </div>
-                            </div>
-                            <div class="inner_wrapper">
-                                <div class="roadmap_inner">
-                                    <div class="ellipse blue"></div>
-                                    <p class="date">2018 – 2019</p>
-                                    <p class="roadmap_text">Add more coins: ZEC, DCR, XRP...</p>
-                                </div>
-                                <div class="roadmap_inner">
-                                    <div class="ellipse gray"></div>
-                                    <p class="roadmap_text">Blockstack contact list</p>
-                                </div>
-                                <div class="roadmap_inner">
-                                    <div class="ellipse gray"></div>
-                                    <p class="roadmap_text">Support token for each coins</p>
-                                </div>
-                            </div>
-                            <div class="inner_wrapper">
-                                <div class="roadmap_inner">
-                                    <div class="ellipse gray"></div>
-                                    <p class="roadmap_text">Support private key in different formats</p>
-                                </div>
-                                <div class="roadmap_inner">
-                                    <div class="ellipse gray"></div>
-                                    <p class="roadmap_text">Multilanguage support</p>
-                                </div>
-                                <div class="roadmap_inner">
-                                    <div class="ellipse gray"></div>
-                                    <p class="roadmap_text">Different UI themes</p>
-                                </div>
-                            </div>
-                            <div class="inner_wrapper">
-                                <div class="roadmap_inner">
-                                    <div class="ellipse gray"></div>
-                                    <p class="roadmap_text">Ledger, Trezor integrations</p>
-                                </div>
-                                <div class="roadmap_inner">
-                                    <div class="ellipse gray"></div>
-                                    <p class="roadmap_text">In-app marketplace or DApp browser</p>
-                                </div>
-                                <div class="roadmap_inner">
-                                    <div class="mini_ellipse"></div>
-                                    <div class="mini_ellipse"></div>
-                                    <div class="mini_ellipse"></div>
-                                    <p class="roadmap_text">and lots more</p>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="right_column">
-                    <div class="inner">
-                        <div class="wrapper">
-                            <h2>Multi-currencies</h2>
-                            <img src="img/multi_currencies.png" alt="Multi-currencies">
-                            <p>Receive, send and store the most popular coins, like Bitcoin, Ethereum, Litecoin, Dash and lots more.</p>
-                        </div>
-                    </div>
-                    <div class="inner">
-                        <div class="wrapper">
-                            <h2>Tokens</h2>
-                            <img src="img/tokens.png" alt="Tokens">
-                            <p>Full support for any tokens on Ethereum network. Bitcoin tokens (Omnilayer) is coming soon.</p>
-                        </div>
-                    </div>
-                    <div class="inner">
-                        <div class="wrapper exchange">
-                            <h2>Exchange</h2>
-                            <p>In-app exchange is supported by ShapeShift, it allows to convert coins to each other in the most intuitive and easiest way.</p>
-                            <img src="img/exchange.png" alt="Exchange">
-                        </div>
-                    </div>
+            <div class="intro__inner">
+                <h1 class="intro__title">Create your first <br>decentralized wallet</h1>
+                <p class="intro__text">The easiest way to manage <br>multiple cryptocurrency assets</p>
+                <div class="btn-wrap">
+                    <button class="btn intro__btn" type="submit">Create wallet</button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- FOOTER -->
-    <footer>
+
+    <main class="main">
         <div class="container">
-            <div class="about">
-                <p class="footer_title">About</p>
-                <nav>
-                    <ul>
-                        <li><a href="#">Introducing</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </nav>
+            <div class="main__inner">
+                <div class="col">
+                    <div class="col__item">
+                        <p class="col__item-text">Dappy is light wallet powered by Blockstack. It uses Gaia decentralized storage and encryption option. Dappy doesn't store or proceed user private key, the all data are securely stored in the Gaia. Dappy was created by the BC Net that trust in crypto and decentralized applications.</p>
+                    </div>
+                    <div class="col__item">
+                        <h3 class="col__item-title">Free and open source</h3>
+                        <img class="col__item-img img" src="assets/img/main-img/free-and-open-source.svg" alt="Free and open source">
+                        <p class="col__item-text">Fully open and transparent wallet. Our code is <b>open source</b> and trusted by Blockstack Team.</p>
+                    </div>
+                    <div class="col__item">
+                        <h3 class="col__item-title roadmap--title">Roadmap</h3>
+                        <div class="roadmap">
+                            <div class="roadmap__item-wrap">
+                                <div class="roadmap__item">
+                                    <div class="ellipse ellipse--green"></div>
+                                    <p class="roadmap__date">May 2018</p>
+                                    <p class="roadmap__text">Blockstack <br>Autorisation</p>
+                                </div>
+                                <div class="roadmap__item">
+                                    <div class="ellipse ellipse--green"></div>
+                                    <p class="roadmap__text">Decentralized <br>storage Gaia</p>
+                                </div>
+                                <div class="roadmap__item">
+                                    <div class="ellipse ellipse--green"></div>
+                                    <p class="roadmap__text">BTC, ETH, ETC, LTC, <br>BCH, BTG, DOGE,<br> DCR, DACH</p>
+                                </div>
+                            </div>
+                            <div class="roadmap__item-wrap">
+                                <div class="roadmap__item">
+                                    <div class="ellipse ellipse--green"></div>
+                                    <p class="roadmap__text">Support<br> ERC20 tokens</p>
+                                </div>
+                                <div class="roadmap__item">
+                                    <div class="ellipse ellipse--green"></div>
+                                    <p class="roadmap__text">Support<br> Custom token</p>
+                                </div>
+                                <div class="roadmap__item">
+                                    <div class="ellipse ellipse--green"></div>
+                                    <p class="roadmap__date">June 2018</p>
+                                    <p class="roadmap__text">Exchange powered <br>by ShapeShift</p>
+                                </div>
+                            </div>
+                            <div class="roadmap__item-wrap">
+                                <div class="roadmap__item">
+                                    <div class="ellipse ellipse--blue"></div>
+                                    <p class="roadmap__date">2018 – 2019</p>
+                                    <p class="roadmap__text">Add more coins:<br> ZEC, DCR, XRP...</p>
+                                </div>
+                                <div class="roadmap__item">
+                                    <div class="ellipse ellipse--gray"></div>
+                                    <p class="roadmap__text">Blockstack<br> contact list</p>
+                                </div>
+                                <div class="roadmap__item">
+                                    <div class="ellipse ellipse--gray"></div>
+                                    <p class="roadmap__text">Support token <br>for each coins</p>
+                                </div>
+                            </div>
+                            <div class="roadmap__item-wrap">
+                                <div class="roadmap__item">
+                                    <div class="ellipse ellipse--gray"></div>
+                                    <p class="roadmap__text">Support private key<br> in different formats</p>
+                                </div>
+                                <div class="roadmap__item">
+                                    <div class="ellipse ellipse--gray"></div>
+                                    <p class="roadmap__text">Multilanguage<br> support</p>
+                                </div>
+                                <div class="roadmap__item">
+                                    <div class="ellipse ellipse--gray"></div>
+                                    <p class="roadmap__text">Different UI<br> themes</p>
+                                </div>
+                            </div>
+                            <div class="roadmap__item-wrap">
+                                <div class="roadmap__item">
+                                    <div class="ellipse ellipse--gray"></div>
+                                    <p class="roadmap__text">Ledger, Trezor <br>integrations</p>
+                                </div>
+                                <div class="roadmap__item">
+                                    <div class="ellipse ellipse--gray"></div>
+                                    <p class="roadmap__text">In-app marketplace<br> or DApp browser</p>
+                                </div>
+                                <div class="roadmap__item">
+                                    <div class="mini__ellipse-wrap">
+                                        <div class="mini--ellipse"></div>
+                                        <div class="mini--ellipse"></div>
+                                        <div class="mini--ellipse"></div>
+                                    </div>
+                                    <p class="roadmap__text">and lots more</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col__item">
+                        <h3 class="col__item-title">Multi-currencies</h3>
+                        <img class="col__item-img img" src="assets/img/main-img/multi-currencies.svg" alt="Multi-currencies">
+                        <p class="col__item-text">Receive, send and store the most popular coins, like Bitcoin, Ethereum, Litecoin, Dash and lots more.</p>
+                    </div>
+                    <div class="col__item">
+                        <h3 class="col__item-title">Tokens</h3>
+                        <img class="col__item-img img" src="assets/img/main-img/tokens.svg" alt="Tokens">
+                        <p class="col__item-text">Full support for any tokens on Ethereum network. Bitcoin tokens (Omnilayer) is coming soon.</p>
+                    </div>
+                    <div class="col__item">
+                        <h3 class="col__item-title exchange--title">Exchange</h3>
+                        <p class="col__item-text exchange--text">In-app exchange is supported by ShapeShift, it allows to convert coins to each other in the most intuitive and easiest way.</p>
+                        <img class="col__item-img img exchange--img" src="assets/img/main-img/exchange.svg" alt="Exchange">
+                    </div>
+                </div>
             </div>
-            <div class="contact">
-                <p class="footer_title">Contact</p>
-                <p><a href="mailto:hello@dappywallet.com">hello@dappywallet.com</a></p>
-                <ul>
-                    <li><a href="#"><img src="icon/twitter.svg" alt="Twittwr" target="_blank"></a></li>
-                    <li><a href="#"><img src="icon/social-ph2x.svg" alt="Social" target="_blank"></a></li>
-                    <li><a href="#"><img src="icon/github.svg" alt="GitHub" target="_blank"></a></li>
-                    <li><a href="#"><img src="icon/reddit.svg" alt="Reddit" target="_blank"></a></li>
-                    <li><a href="#"><img src="icon/bitcointalk.svg" alt="BitCoin" target="_blank"></a></li>
-                    <li><a href="#"><img src="icon/blockstack.svg" alt="Blockstack" target="_blank"></a></li>
-                </ul>
-            </div>
-            <div class="newsletter">
-                <p class="footer_title">Newsletter</p>
-                <p>Please enter your e-mail if want to receive updates.</p>
-                <form action="#">
-                        <input id="email" type="email" placeholder="Your e-mail" class="field">
-                    <button type="submit" class="btn_news">Subscribe</button>
-                </form>
-                <p class="mini_text">Designed by <span>Hodl Horse</span>, Developed by <span>BC Net</span></p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="about">
+                    <h4 class="footer__title">About</h4>
+                    <nav class="footer__nav">
+                        <a class="footer__nav-link" href="#">Introducing</a>
+                        <a class="footer__nav-link" href="#">Terms of Service</a>
+                        <a class="footer__nav-link" href="#">Privacy Policy</a>
+                    </nav>
+                </div>
+                <div class="contact">
+                    <h4 class="footer__title">Contact</h4>
+                    <a class="contact__mail" href="mailto:hello@dappywallet.com">hello@dappywallet.com</a>
+                    <div class="nav__social">
+                        <a class="nav__social-link" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="nav__social-link" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#ph"></use>
+                            </svg>
+                        </a>
+                        <a class="nav__social-link" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#github"></use>
+                            </svg>
+                        </a>
+                        <a class="nav__social-link" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#reddit"></use>
+                            </svg>
+                        </a>
+                        <a class="nav__social-link" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#bitcointalk"></use>
+                            </svg>
+                        </a>
+                        <a class="nav__social-link" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#blockstack"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h4 class="footer__title">Newsletter</h4>
+                    <p class="newsletter__text">Please enter your e-mail if want to receive updates.</p>
+                    <form class="newsletter__form" action="#">
+                        <input class="input__field" id="email" type="email" placeholder="Your e-mail">
+                        <button class="btn btn_news" type="submit">Subscribe</button>
+                    </form>
+                    <p class="copyright">Designed by <b>Hodl Horse</b>, Developed by <b>BC Net</b></p>
+                </div>
             </div>
         </div>
     </footer>
+
+    <svg display="none"> 
+        <symbol id="twitter" viewBox="0 0 24 24">
+            <g>
+                <path d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.37152 18.627 0 12 0ZM17.97 9.30598L17.979 9.68848C17.979 13.5945 15.0075 18.0945 9.57297 18.0945C7.90498 18.0945 6.35246 17.6055 5.04447 16.767C5.2755 16.794 5.51096 16.809 5.74949 16.809C7.134 16.809 8.40749 16.3365 9.41848 15.5444C8.1255 15.5205 7.03497 14.6655 6.65848 13.4925C6.83996 13.527 7.02298 13.5435 7.21497 13.5435C7.48497 13.5435 7.74595 13.509 7.99345 13.4415C6.64195 13.1685 5.62346 11.976 5.62346 10.545V10.5075C6.02245 10.7295 6.47695 10.8615 6.96145 10.878C6.16944 10.3485 5.64744 9.44404 5.64744 8.41953C5.64744 7.87804 5.79296 7.37104 6.04643 6.93455C7.50294 8.72254 9.68093 9.89853 12.1364 10.0215C12.0854 9.80552 12.06 9.57904 12.06 9.34806C12.06 7.71758 13.3829 6.39455 15.015 6.39455C15.8639 6.39455 16.632 6.75302 17.1719 7.32752C17.8439 7.194 18.4769 6.94802 19.0484 6.61052C18.8279 7.30053 18.36 7.87952 17.7494 8.2455C18.345 8.17499 18.9164 8.01447 19.4459 7.78049C19.05 8.37147 18.5475 8.89199 17.97 9.30598Z"/>
+            </g>
+        </symbol>
+        <symbol id="ph" viewBox="0 0 24 24">
+            <g>
+                <path d="M13.6 8.40002H10.2V12H13.6C14.59 12 15.4 11.19 15.4 10.2C15.4 9.21002 14.59 8.40002 13.6 8.40002Z"/>
+                <path d="M12 0C5.37 0 0 5.37 0 12C0 18.63 5.37 24 12 24C18.63 24 24 18.63 24 12C24 5.37 18.63 0 12 0ZM13.6 14.4H10.2V18H7.8V6H13.6C15.92 6 17.8 7.88 17.8 10.2C17.8 12.52 15.92 14.4 13.6 14.4Z"/>
+            </g>
+        </symbol>
+        <symbol id="github" viewBox="0 0 24 24">
+            <g>
+                <path d="M12.0175 11.9365C12.012 11.9365 12.0057 11.9362 12 11.936C11.994 11.9362 11.9878 11.9365 11.9823 11.9365C10.493 11.9365 9.18075 11.5595 8.40525 12.2715C7.9405 12.6987 7.74475 13.2135 7.74475 13.7677C7.74475 16.083 9.59975 16.3673 11.982 16.3673H12.0175C14.3997 16.3673 16.2547 16.0828 16.2547 13.7677C16.2547 13.2133 16.059 12.6987 15.5942 12.2715C14.8187 11.5595 13.5068 11.9365 12.0175 11.9365ZM9.992 15.1003C9.53875 15.1003 9.17125 14.5913 9.17125 13.9635C9.17125 13.3357 9.53875 12.827 9.992 12.827C10.4452 12.827 10.8132 13.3357 10.8132 13.9635C10.8132 14.5913 10.4452 15.1003 9.992 15.1003ZM14.0077 15.1003C13.5542 15.1003 13.1865 14.5913 13.1865 13.9635C13.1865 13.3357 13.5542 12.827 14.0077 12.827C14.4607 12.827 14.8285 13.3357 14.8285 13.9635C14.8285 14.5913 14.461 15.1003 14.0077 15.1003ZM12 0C5.37225 0 0 5.3725 0 12C0 18.6275 5.37225 24 12 24C18.6273 24 24 18.6275 24 12C24 5.3725 18.6273 0 12 0ZM13.0945 16.9252C12.8795 16.9252 12.452 16.9258 12 16.9263C11.5478 16.9258 11.12 16.9252 10.9052 16.9252C9.9545 16.9252 6.1895 16.8525 6.1895 12.314C6.1895 11.2698 6.5475 10.5058 7.13325 9.8695C7.03975 9.63875 7.035 8.32825 7.53375 7.07375C7.53375 7.07375 8.67775 7.19925 10.4087 8.387C10.7715 8.28675 11.3857 8.23675 12 8.23675C12.6138 8.23675 13.228 8.2865 13.5913 8.387C15.322 7.19925 16.4657 7.07375 16.4657 7.07375C16.9645 8.32825 16.96 9.63875 16.8665 9.8695C17.4525 10.5058 17.8105 11.27 17.8105 12.314C17.8105 16.8525 14.0452 16.9252 13.0945 16.9252Z"/>
+            </g>
+        </symbol>
+        <symbol id="reddit" viewBox="0 0 24 24">
+            <g>
+                <path d="M6.1622 10.7695C5.92232 10.5814 5.62696 10.4731 5.31956 10.4731C4.5658 10.4731 3.95297 11.087 3.95297 11.8412C3.95297 12.2782 4.16388 12.6814 4.50638 12.935C4.7907 12.1213 5.36744 11.3823 6.1622 10.7695Z"/>
+                <path d="M17.8614 7.39445C18.4244 7.39445 18.8823 6.93606 18.8823 6.37258C18.8823 5.8091 18.4244 5.3512 17.8614 5.3512C17.2979 5.3512 16.8391 5.8091 16.8391 6.37258C16.8391 6.93606 17.2979 7.39445 17.8614 7.39445Z"/>
+                <path d="M12 0C5.37281 0 0 5.37281 0 12C0 18.6272 5.37281 24 12 24C18.6272 24 24 18.6272 24 12C24 5.37281 18.6272 0 12 0ZM19.5754 13.5119C19.6076 13.701 19.6282 13.8923 19.6282 14.0874C19.6282 16.896 16.1904 19.1806 11.9644 19.1806C7.73868 19.1806 4.30134 16.896 4.30134 14.0874C4.30134 13.8802 4.3254 13.6774 4.36174 13.4771C3.78525 13.139 3.42089 12.5198 3.42089 11.8414C3.42089 10.7935 4.27261 9.94177 5.31978 9.94177C5.7983 9.94177 6.25399 10.1321 6.60362 10.4544C7.95548 9.57299 9.79495 9.02351 11.8254 8.99896L13.0076 5.25987C13.0499 5.12655 13.1878 5.04847 13.3226 5.08088L16.4172 5.80935C16.6436 5.23139 17.2039 4.81964 17.8616 4.81964C18.7178 4.81964 19.4148 5.51644 19.4148 6.37283C19.4148 7.22922 18.7178 7.92651 17.8616 7.92651C17.0048 7.92651 16.308 7.22922 16.308 6.37283C16.308 6.35834 16.3117 6.34558 16.3121 6.33109L13.4412 5.65492L12.3806 9.00829C14.3222 9.07777 16.0759 9.62406 17.3711 10.4814C17.7232 10.1414 18.1835 9.94152 18.6802 9.94152C19.7276 9.94152 20.5801 10.7937 20.5801 11.8414C20.5794 12.5519 20.1904 13.1839 19.5754 13.5119Z"/>
+                <path d="M8.26535 13.1452C8.26535 12.5218 8.7726 12.0145 9.39599 12.0145C10.0194 12.0145 10.5264 12.5218 10.5264 13.1452C10.5264 13.7686 10.0196 14.2756 9.39599 14.2756C8.77236 14.2756 8.26535 13.7686 8.26535 13.1452ZM14.743 16.4971C14.1734 17.0672 13.279 17.3439 12.0091 17.3439C12.0062 17.3439 12.0035 17.3417 12 17.3417C11.9966 17.3417 11.9939 17.3439 11.9904 17.3439C10.7206 17.3439 9.82639 17.0672 9.25653 16.4971C9.15292 16.3935 9.15292 16.2253 9.25653 16.1212C9.36063 16.0176 9.52882 16.0176 9.63292 16.1212C10.0977 16.5864 10.8686 16.8121 11.9904 16.8121C11.9939 16.8121 11.9966 16.814 12 16.814C12.0035 16.814 12.0062 16.8121 12.0091 16.8121C13.1312 16.8121 13.9023 16.5862 14.3671 16.1212C14.4712 16.0176 14.6394 16.0176 14.7435 16.1212C14.8471 16.2253 14.8471 16.3937 14.743 16.4971ZM14.6082 14.2756C13.9853 14.2756 13.4778 13.769 13.4778 13.1452C13.4778 12.5213 13.9848 12.0145 14.6082 12.0145C15.2316 12.0145 15.7386 12.5218 15.7386 13.1452C15.7386 13.7686 15.2316 14.2756 14.6082 14.2756Z"/>
+                <path d="M18.6795 10.4731C18.3534 10.4731 18.0475 10.5908 17.803 10.7955C18.5928 11.4133 19.1629 12.1572 19.4382 12.9753C19.8141 12.7251 20.0471 12.307 20.0471 11.8412C20.0471 11.087 19.4342 10.4731 18.6795 10.4731Z"/>
+            </g>
+        </symbol>
+        <symbol id="bitcointalk" viewBox="0 0 24 24">
+            <g>
+                <path d="M14.1818 13.0909H10.9091V15.2728H14.1818C15.6239 15.2728 15.6239 13.0909 14.1818 13.0909Z"/>
+                <path d="M14.1818 8.72729H10.9091V10.9091H14.1818C15.6239 10.9091 15.6239 8.72729 14.1818 8.72729Z"/>
+                <path d="M12 0C5.51033 0 0 5.29164 0 12C0 18.6257 5.40182 24 12 24C18.6168 24 24 18.6168 24 12C24 5.3832 18.6168 0 12 0ZM14.1818 17.4545H13.0909V18.5455C13.0909 19.9835 10.9091 19.9894 10.9091 18.5455V17.4545H7.63636C6.19833 17.4545 6.19244 15.2727 7.63636 15.2727H8.72727V8.72727H7.63636C6.19833 8.72727 6.19244 6.54545 7.63636 6.54545H10.9091V5.45455C10.9091 4.01651 13.0909 4.01062 13.0909 5.45455V6.54545H14.1818C16.9819 6.54545 18.521 9.87353 16.6033 12C18.521 14.1265 16.9819 17.4545 14.1818 17.4545Z"/>
+            </g>
+        </symbol>
+        <symbol id="blockstack" viewBox="0 0 24 24">
+            <g>
+                <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM10 8C10 9.10457 9.10457 10 8 10C6.89543 10 6 9.10457 6 8C6 6.89543 6.89543 6 8 6C9.10457 6 10 6.89543 10 8ZM18 8C18 9.10457 17.1046 10 16 10C14.8954 10 14 9.10457 14 8C14 6.89543 14.8954 6 16 6C17.1046 6 18 6.89543 18 8ZM18 16C18 17.1046 17.1046 18 16 18C14.8954 18 14 17.1046 14 16C14 14.8954 14.8954 14 16 14C17.1046 14 18 14.8954 18 16ZM10 16C10 17.1046 9.10457 18 8 18C6.89543 18 6 17.1046 6 16C6 14.8954 6.89543 14 8 14C9.10457 14 10 14.8954 10 16Z"/>
+            </g>
+        </symbol>
+    </svg> 
 </body>
 </html>

@@ -70,7 +70,7 @@
                 <h1 class="intro__title">Create your first <br>decentralized wallet</h1>
                 <p class="intro__text">The easiest way to manage <br>multiple cryptocurrency assets</p>
                 <div class="btn-wrap">
-                    <button class="btn intro__btn" type="submit">Create wallet</button>
+                    <button class="btn intro__btn" type="submit" data-modal="#createWalletModal">Create wallet</button>
                 </div>
             </div>
         </div>
@@ -252,6 +252,27 @@
         </div>
     </footer>
 
+    <!-- Modals -->
+    <div id="createWalletModal" class="modal">
+        <div class="modal__inner">
+            <div class="modal__content">
+                <button class="modal__close" type="button" data-modal-close>
+                    <img class="modal__close-img" src="assets/img/close.svg" alt="Close">
+                </button>
+                <div class="modal__header">
+                    <img class="modal__img" src="assets/img/atlassian.svg" alt="Create wallet"/>
+                    <h4 class="modal__title">Create New Wallet</h4>
+                </div>
+                <form class="modal__form">
+                    <input class="modal__form-input" type="email" placeholder="Enter your E-mail adress" required />
+                    <input class="modal__form-input" type="password" placeholder="Pick a super strong password" required />
+                    <input class="modal__form-input" type="password" placeholder="Re-enter your password" required />
+                    <button class="btn modal__form-btn" type="submit">Start</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <!-- Sprite -->
     <svg display="none"> 
         <symbol id="twitter" viewBox="0 0 24 24">
@@ -292,6 +313,7 @@
             </g>
         </symbol>
     </svg> 
+    
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="assets/js/index.js"></script>
 </body>

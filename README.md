@@ -1,6 +1,6 @@
 # Dappy landing page
 
-![Design preview for the Easybank landing page coding challenge](./assets/img/preview.png)
+![Design preview for Dappy landing page](./assets/img/preview.png)
 
 ## Built with
 
